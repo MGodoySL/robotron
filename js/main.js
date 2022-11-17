@@ -53,3 +53,7 @@ function updateRobot(piece, operation) {
         operation === "+" ? (stat.textContent = Number(stat.textContent) + pecas[piece][stat.dataset.stats]) : (stat.textContent = Number(stat.textContent) - pecas[piece][stat.dataset.stats]);
     });
 }
+
+function trocaImagem(cor) {
+    document.querySelector(".robo").src = "img/Robotron 2000 - " + cor + ".png";
+}
